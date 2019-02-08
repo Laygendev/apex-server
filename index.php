@@ -18,11 +18,7 @@ Server::create('/')
             )
         );
     })
-    ->addGetRoute('foo/(.*)', function($bar){
-        return $bar;
-    })
-    ->addPostRoute('foo', function($field1, $field2) {
-      // do stuff with $field1, $field2 etc
-      // or you can directly get them with $_POST['field1']
+    ->addPostRoute('update', function($pseudo) {
+      return $pseudo;
     })
 ->run();
