@@ -1,0 +1,59 @@
+{
+  "0,1,2":
+  {
+    "players": {
+      "0": {
+        "name": "Ninja",
+        "legends": {
+          "bangalore": 80.00,
+          "bloodhound": 1.00,
+          "caustic": 2.00,
+          "gibraltar": 1.00,
+          "lifeline": 5.00,
+          "mirage": 0.00,
+          "pathfinder": 1.00,
+          "wraith": 10.00
+        }
+      },
+      "1": {
+        "name": "Doigby",
+        "legends": {
+          "bangalore": 80.00,
+          "bloodhound": 1.00,
+          "caustic": 2.00,
+          "gibraltar": 1.00,
+          "lifeline": 5.00,
+          "mirage": 0.00,
+          "pathfinder": 1.00,
+          "wraith": 10.00
+        }
+      },
+      "2": {
+        "name": "Gotaga",
+        "legends": {
+          "bangalore": 80.00,
+          "bloodhound": 1.00,
+          "caustic": 2.00,
+          "gibraltar": 1.00,
+          "lifeline": 5.00,
+          "mirage": 0.00,
+          "pathfinder": 1.00,
+          "wraith": 10.00
+        }
+      }
+    },
+    "top": {
+      "1": 90.00,
+      "2": 5.00,
+      "3": 4.00,
+      "4": 0.00,
+      "5": 0.00
+    },
+    "kd":10.79,
+    "kills":98680,
+    "wins":5162,
+    "matches":14309,
+    "winrate":36.08,
+    "score":5506866
+  }
+}

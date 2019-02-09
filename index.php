@@ -5,8 +5,14 @@ include 'vendor/autoload.php';
 use RestService\Server;
 
 Server::create('/')
+    ->addGetRoute('player/(.*)', function($pseudo){
+      return json_decode( file_get_contents( './Data/players/' .$pseudo . '.json'), true );
+    })
     ->addGetRoute('players', function(){
       return json_decode( file_get_contents( './Data/players.json'), true );
+    })
+    ->addGetRoute('teams', function(){
+      return json_decode( file_get_contents( './Data/teams.json'), true );
     })
     ->addPostRoute('update', function($pseudo) {
       $content = json_decode( file_get_contents( './Data/players.json'), true );
