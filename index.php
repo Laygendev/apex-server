@@ -90,6 +90,23 @@ Server::create('/')
     ->addGetRoute('update/(.*)', function($pseudo) {
       return update($pseudo);
     })
+    ->addPostRoute('subscribe', function($email) {
+      $sanitized_c = filter_var($email, FILTER_SANITIZE_EMAIL);
+      if (filter_var($sanitized_c, FILTER_VALIDATE_EMAIL)) {
+
+        $emails = json_decode(file_get_contents('./Data/emails/email.json'), true);
+
+        $emails[] = $sanitized_c;
+
+        $f = fopen('./Data/emails/email.json', 'w+');
+        fputs($f, json_encode( $emails ));
+        fclose($f);
+      } else {
+        return false;
+      }
+
+      return true;
+    })
 ->run();
 
 function update($pseudo) {
